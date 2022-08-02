@@ -15,17 +15,17 @@
 // };
 
 
-var str = ['city', 'smity', 'pitty'];
+// var str = ['city', 'smity', 'pitty'];
 
-const person = {
-    name: 'Valerchik',
-    [str[2]]: 'Gomel',
-};
+// const person = {
+//     name: 'Valerchik',
+//     [str[2]]: 'Gomel',
+// };
 
-const { 'pitty': asda } = person;
+// const { 'pitty': asda } = person;
 
 
-console.log(asda);
+// console.log(asda);
 
 // let nick = 'Bobik';
 
@@ -127,5 +127,23 @@ console.log(asda);
 // console.log( person.hasOwnProperty('isProgrammer') );
 
 // delete person.age;
+
+
+
+// 1. создать объект subscribers с полями oldSubscribers и newSubscribers
+// добавьте в объект поле allSubscribers которое должно
+//  хранить сумму oldSubscribers + newSubscribers
+//  если число allSubscribers > 700 вывести you are famous, иначе try harder
+//  2. дан массив объектов [
+//     {a:2, b: 1}, {a:5, b:12}, {a: 95, b: 7}
+//  ]
+//  используя методы массивов и циклы 
+//  вывести в консоль 'its valid', если во всех объектах поле a > b
+//  3. на основе исходного массива создать массив таких же объектов, но поле b
+//  должно быть возведено в квадрат
+//  пример: [{a: 2, b: 1}, {a: 5, b: 144}, {a: 95, b: 49}]
+//  4. создать массив на основе предыдущего, в котором
+//  поля a и b будут последовательно помещены в массив
+//  пример: [ 2, 1, 5, 144, 95, 49]
 
 
