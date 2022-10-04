@@ -17,33 +17,24 @@
 // «Среда». Вызов dayOfWeek(8) вернет «Нет такого дня недели».
 
 // function dayOfWeek (numberOfDay){
-//     let day = '';
 //     switch (numberOfDay) {
 //         case 1: 
-//             day = 'Понедельник';
-//             break;
+//             return 'Понедельник';
 //         case 2:
-//             day = 'Вторник';
-//             break;
+//             return 'Вторник';
 //         case 3:
-//             day = 'Среда';
-//             break;
+//             return 'Среда';
 //         case 4:
-//             day = 'Четверг';
-//             break;
+//             return 'Четверг';
 //         case 5:
-//             day = 'Пятница';
-//             break;
+//             return 'Пятница';
 //         case 6:
-//             day = 'Суббота';
-//             break;
+//             return 'Суббота';
 //         case 7:
-//             day = 'Воскресенье';
-//             break;
+//             return 'Воскресенье';
 //         default:
-//             day = 'Нет такого дня недели';
+//             return 'Нет такого дня недели';
 //     }
-//     return day;
 // }
 // console.log(dayOfWeek(+prompt('Введите номер дня недели')));
 
@@ -106,10 +97,8 @@
 //     let firstElement = arrNum[0];
 //     let newArray = [];
 //     for (let i = 1; i < arrNum.length; i++){
-//         if (firstElement === arrNum[i]){
-//             if(!newArray.includes(arrNum[i])){
-//                 newArray.push(firstElement);
-//             }
+//         if (firstElement === arrNum[i] && !newArray.includes(arrNum[i])) {
+//             newArray.push(firstElement);
 //         }
 //         firstElement = arrNum[i];
 //     }
@@ -141,12 +130,12 @@
 //         return firstValue;
 //     });
 //     let bigNum = 0;
-//     const findTheBiggestNum = sumAllElementsOfArr.reduce((acc, item, index) => {
+//     const findTheBiggestNum = sumAllElementsOfArr.reduce((maxNumIndex, item, index) => {
 //         if(bigNum < item){
 //             bigNum = item;
-//             acc = index;
+//             maxNumIndex = index;
 //          }
-//         return acc;
+//         return maxNumIndex;
 //     }, 0);
 
 //     return someArr[findTheBiggestNum];
@@ -163,9 +152,7 @@
 
 // let yourAge = +prompt('Введите ваш возраст');
 // function validator(yourAge){
-//     if (yourAge && yourAge >= 5 && yourAge <= 100){
-//         return true;
-//     }
+//     return (yourAge && yourAge >= 5 && yourAge <= 100)
 // }
 // if (validator(yourAge)){
 //     alert(`Вам ${yourAge} лет`);
